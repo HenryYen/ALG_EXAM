@@ -80,7 +80,7 @@ int main(){
 
 	int count = allLCS.size();
 	fstream fp;
-    fp.open(filename, ios::out);
+    fp.open("out.txt", ios::out);
 	cout << lcs_length << " " << count << endl;
 	fp<< lcs_length << " " << count << endl; 
 	sort(allLCS.begin(),allLCS.end());

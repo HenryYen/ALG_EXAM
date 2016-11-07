@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <fstream>
 #define SIZE 110
 
 
@@ -78,14 +79,17 @@ int main(){
 	
 
 	int count = allLCS.size();
-
+	fstream fp;
+    fp.open(filename, ios::out);
 	cout << lcs_length << " " << count << endl;
-
+	fp<< lcs_length << " " << count << endl; 
 	sort(allLCS.begin(),allLCS.end());
 	for (string s : allLCS) { 
 		cout << s << endl;
+		fp<<s<<endl;
 	}
 
+    fp.close();
 	return 0;
 }
 

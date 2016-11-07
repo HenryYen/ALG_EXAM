@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 #define SIZE 110
+
 
 using namespace std;
 
@@ -15,7 +17,8 @@ void findAllLCS(char *path,int x,int y,int value);
 
 int main(){
 	
-	cin >> sA >> sB;
+	sA = "UJDDTWFEULCMRYWJAYNMCPROIQXMGJJAVNEQLLUIWYWQXSZZTMLXEDNOVKBBWMDTBJJPUFXTDTJCNIDGWPFCUSRPDUSBGXWIHHXD";
+	sB = "MWWRRFWEPZNOQSQKLHBQBVRKTPSCWRFKNEBELXIBZXRPQHCBRDTSBMCWBWYXPFJCJKIXKTYLQRAIYCJPIEKJQOHRNFQCMZFYMPVY";
 
 	for(int i=0;i<=sA.size();i++){
 		dp[0][i]=0;
